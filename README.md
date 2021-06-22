@@ -1,1 +1,5 @@
-Player rolls a die to get the number between 1 to 6
+Player check for option.
+1. No play: Player stays in same position.
+2. Laader: Player moves ahead by number of position received in die.
+3. Snake: Player moves behind by number of position received in die.
+
