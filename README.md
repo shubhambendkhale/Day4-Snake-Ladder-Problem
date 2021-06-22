@@ -1,1 +1,1 @@
-Welcome to the Snake and Ladder Program
+Initializing player position at zero.
