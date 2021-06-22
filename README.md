@@ -1,3 +1,2 @@
-Play game till player reaches the winning position 100.
-In case player position moves below 0, then the player restarts from 0.
+Ensure player gets to exact position 100.
 
