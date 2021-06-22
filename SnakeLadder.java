@@ -6,29 +6,29 @@ public class SnakeLadder {
 		Scanner s = new Scanner(System.in);
 		String playerName = s.next();
 		int playerPosition = 0;
+		int dieCounter = 0;
 		System.out.println("Player name: " + playerName);
 		while ( winningPosition > playerPosition ) {
 		int die = (int) (Math.floor(Math.random() * 10) % 6 + 1);
+		dieCounter++;
 		int remainingPosition = winningPosition - playerPosition;
 		int option = (int) (Math.floor(Math.random() * 10) % 3);
 		if( remainingPosition >= die ) {
-			switch (option) {
-				case 0:
-					System.out.println("No play : " + 0);
-					playerPosition += 0;
-					break;
-				case 1:
-					System.out.println("Ladder  : " + "+" + die);
-					playerPosition += die;
-					break;
-				default:
-					System.out.println("Snake   : " + "-" + die);
-					playerPosition -= die;
-					if (playerPosition < 0)
-						playerPosition = 0;
-			}
+		switch (option) {
+			case 0:
+				playerPosition += 0;
+				break;
+			case 1:
+				playerPosition += die;
+				break;
+			default:
+				playerPosition -= die;
+				if (playerPosition < 0)
+					playerPosition = 0;
+		} // end of switch
 		} // end of if
-		} // end of while
 		System.out.println("Player position: " + playerPosition);
+		} // end of while
+		System.out.println("Dice rolled " + dieCounter + " times.");
 	}
 }

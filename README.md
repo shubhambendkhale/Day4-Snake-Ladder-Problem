@@ -1,2 +1,2 @@
-Ensure player gets to exact position 100.
+Reporting the number of times the dice was played to win the game and also the position.
 
